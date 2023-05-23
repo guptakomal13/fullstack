@@ -1,30 +1,89 @@
-<!DOCTYPE htmml
-<htmml>
+<html>
+
 <head>
+    <title>HTML FORM</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+
+        form {
+            background-color: azure;
+            padding: 50px;
+            margin: 10px 50px;
+            width: 500px;
+        }
+
+        input {
+            height: 20px;
+            width: 200px;
+            border-radius: 2px;
+            float: right;
+        }
+
+        .button {
+            background-color: lightblue;
+            height: 25px;
+            color: white;
+            text-transform: uppercase;
+            font-size: large;
+            border: 2px solid green;
+        }
+    </style>
 </head>
+
 <body>
+    <h1>Registration Form</h1>
     <form>
-        <label for="name">fullname :</label>  
-        <input type="text" placeholder="Enter your name" id="name"> 
-        <br>
+        <label for="name">Full Name:</label>
+        <input type="text" placeholder="Enter your name" id="name">
+        <br><br>
 
-        <label for="pass">password</label>
-        <input type="password" id="pass">
-        <br>
+        <label for="Pass">Password</label>
+        <input type="password" placeholder="Enter your password" id="Pass">
+        <br><br>
 
-        <label for="mail">Email</label>
-        <input type="email" id="mail">
-        <br>
+        <label for="mail">EMail</label>
+        <input type="email" placeholder="Enter your email" id="mail">
+        <br><br>
 
-        <label for="color">Enter your color value </label>
-        <input type="color" id="color">
-        <br>
+        <label for="color">Enter your favourite color</label>
+        <input id="color" type="color">
+        <br><br>
 
-        <label for="DOB">Enter your D.O.B</label>
-        <input type="date" id="DOB" 
+        <label for="date">Enter your D.O.B.</label>
+        <input type="date" placeholder="enter your D.O.B." id="date" max="2023-05-30" min="2002-01-23">
+        <br><br>
+
+        <label for="date and time">Enter your meeting date and time</label>
+        <input type="datetime-local" id="date and time">
+        <br><br>
+
+        <label for="resume">upload your resume</label>
+        <input type="file" id="resume" multiple>
+        <br><br>
 
 
-        
+        <!-- <input type="image" src="download.jpeg" width="50px"> -->
+        <!-- 
+        <input type="month">
+        <input type="number" max="2023" min="2002">
+        <input type="range" max="10" min="0"> -->
+        <br><br>
+
+        <label for="github">Enter your Github URL</label>
+        <input type="url" placeholder="Enter your Github url" id="github">
+        <br><br>
+
+
+        <input type="reset" class="button">
+        <br><br>
+
+
+        <input type="submit" value="submit" class="button">
+
     </form>
+
 </body>
+
 </html>
