@@ -10,8 +10,9 @@
             display: grid;
             grid-template-areas: "Header Header"
                                   "Aside Section"
-                                  "Footer Footer";
-        grid-template-rows: 50px 400px 50px;                          
+                                  "Footer Footer"
+                                  "Bottom Bottom";
+        grid-template-rows: 50px 400px 50px 50px;                          
         }
         .item1{
             grid-area: Header;
@@ -29,6 +30,10 @@
             grid-area: Footer;
             background-color: antiquewhite;
         }
+        .item5{
+            grid-area: Bottom;
+            background-color: honeydew;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +42,7 @@
     <div class="item2">Aside</div>
     <div class="item3">Section</div>
     <div class="item4">Footer</div>
+    <div class="item5">Bottom</div>
     </div>
 
 
