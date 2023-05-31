@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
+        .container{
             display: grid;
             grid-template-areas: "Header Header"
-                                 "Aside Section"
-                                 "Footer Footer";
-
+                                  "Aside Section"
+                                  "Footer Footer";
+        grid-template-rows: 50px 400px 50px;                          
         }
         .item1{
             grid-area: Header;
-            background-color: blue;
+            background-color: lightblue;
         }
         .item2{
             grid-area: Aside;
-            background-color: brown;
+            background-color: pink;
         }
         .item3{
             grid-area: Section;
-            background-color: blueviolet;
+            background-color: yellow;
         }
         .item4{
             grid-area: Footer;
-            background-color: chocolate;
+            background-color: antiquewhite;
         }
     </style>
 </head>
-
 <body>
-    <div class=container>
-        <div class=item1>Header</div>
-        <div class=item2>Aside</div>
-        <div class=item3>Section</div>
-        <div class=item1>Footer</div>
+    <div class="container">
+    <div class="item1">Header</div>
+    <div class="item2">Aside</div>
+    <div class="item3">Section</div>
+    <div class="item4">Footer</div>
+    </div>
 
 
 
     </div>
 </body>
-
 </html>
